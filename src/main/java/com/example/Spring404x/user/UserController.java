@@ -1,5 +1,7 @@
 package com.example.Spring404x.user;
 
+import com.example.Spring404x.user.model.UserEditReq;
+import com.example.Spring404x.user.model.UserEditRes;
 import com.example.Spring404x.user.model.UserSignUpReq;
 import com.example.Spring404x.user.model.UserSignUpRes;
 import org.springframework.http.ResponseEntity;
@@ -20,6 +22,11 @@ public class UserController {
     @RequestMapping(method = RequestMethod.POST, value = "/signup")
     public ResponseEntity<UserSignUpRes> signup(@RequestBody UserSignUpReq dto) {
         UserSignUpRes res = userService.signUp(dto);
+        return ResponseEntity.ok(res);
+    }
+    @RequestMapping(method = RequestMethod.POST, value = "/edit")
+    public ResponseEntity<UserEditRes> edit(@RequestBody UserEditReq dto) {
+        UserEditRes res = userService.edit(dto);
         return ResponseEntity.ok(res);
     }
 }

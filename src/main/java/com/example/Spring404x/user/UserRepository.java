@@ -1,5 +1,6 @@
 package com.example.Spring404x.user;
 
+import com.example.Spring404x.user.model.UserEditReq;
 import com.example.Spring404x.user.model.UserSignUpReq;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
@@ -21,4 +22,15 @@ public class UserRepository {
         );
     }
 
+    public void edit(UserEditReq dto) {
+        jdbcTemplate.update("UPDATE USER\n" +
+                        "SET EMAIL = ?, PW = ?, NAME = ?, NICKNAME = ?,  MODIFIED_DATE = NOW()\n" +
+                        "WHERE ID = ?",
+                dto.getEmail(),
+                dto.getPw(),
+                dto.getName(),
+                dto.getNickname(),
+                dto.getId()
+                );
+    }
 }
