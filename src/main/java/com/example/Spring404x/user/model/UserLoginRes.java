@@ -1,10 +1,10 @@
-package com.example.Spring404x.User.model;
+package com.example.Spring404x.user.model;
 
-public class UserLoginReq {
+public class UserLoginRes {
     private String email;
     private String pw;
 
-    public UserLoginReq(String email, String pw) {
+    public UserLoginRes(String email, String pw) {
         this.email = email;
         this.pw = pw;
     }

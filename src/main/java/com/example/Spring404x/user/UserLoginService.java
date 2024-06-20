@@ -1,6 +1,6 @@
 package com.example.Spring404x.user;
 
-import com.example.Spring404x.User.model.UserLoginReq;
+import com.example.Spring404x.user.model.UserLoginReq;
 import org.springframework.stereotype.Service;
 
 @Service
