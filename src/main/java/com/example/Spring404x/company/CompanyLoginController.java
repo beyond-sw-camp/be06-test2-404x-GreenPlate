@@ -1,6 +1,6 @@
-package com.example.Spring404x.Company;
+package com.example.Spring404x.company;
 
-import com.example.Spring404x.Company.model.CompanyLoginReq;
+import com.example.Spring404x.company.model.CompanyLoginReq;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;

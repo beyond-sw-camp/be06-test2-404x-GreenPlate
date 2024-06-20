@@ -1,4 +1,4 @@
-package com.example.Spring404x.Company.model;
+package com.example.Spring404x.company.model;
 
 public class CompanyLoginRes {
     private String email;
