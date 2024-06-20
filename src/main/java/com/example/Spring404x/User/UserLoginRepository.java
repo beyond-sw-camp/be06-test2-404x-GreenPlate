@@ -1,4 +1,4 @@
-package com.example.Spring404x.User;
+package com.example.Spring404x.user;
 
 import com.example.Spring404x.User.model.UserLoginReq;
 import com.example.Spring404x.User.model.UserLoginRes;

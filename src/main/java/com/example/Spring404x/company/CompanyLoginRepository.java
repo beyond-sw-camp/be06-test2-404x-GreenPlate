@@ -1,7 +1,7 @@
-package com.example.Spring404x.Company;
+package com.example.Spring404x.company;
 
-import com.example.Spring404x.Company.model.CompanyLoginReq;
-import com.example.Spring404x.Company.model.CompanyLoginRes;
+import com.example.Spring404x.company.model.CompanyLoginReq;
+import com.example.Spring404x.company.model.CompanyLoginRes;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
