@@ -1,7 +1,7 @@
 package com.example.Spring404x.user;
 
-import com.example.Spring404x.User.model.UserLoginReq;
-import com.example.Spring404x.User.model.UserLoginRes;
+import com.example.Spring404x.user.model.UserLoginReq;
+import com.example.Spring404x.user.model.UserLoginRes;
 import org.springframework.dao.IncorrectResultSizeDataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
