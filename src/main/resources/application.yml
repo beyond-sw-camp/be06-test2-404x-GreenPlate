@@ -2,4 +2,5 @@ spring:
   datasource:
     url: ${DBURL}
     username: ${DBUSERNAME}
+    password: ${DBUSERPW}
     driver-class-name: org.mariadb.jdbc.Driver
